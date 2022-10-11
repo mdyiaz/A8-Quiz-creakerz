@@ -11,10 +11,12 @@ const Topics = () => {
     return (
         <div>
             <h2>Topics</h2>
+            <div className='grid grid-cols-3'>
             {
                 topicc.map(topic => <Cart key={topic.id}
                 topic={topic}></Cart>)
             }
+            </div>
 
 
         </div>

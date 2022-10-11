@@ -6,6 +6,7 @@ import Main from './layout/Main';
 import Topics from './component/Topics/Topics';
 import Statics from './component/Statics/Statics';
 import Blog from './component/Blog/Blog';
+import Quiz from './component/Quiz/Quiz';
 
 function App() {
 
@@ -31,6 +32,13 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path:'cart/:cartId',
+          loader:async({params}) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.cartId}`)
+          },
+          element:<Quiz></Quiz>
         }
       ]
     }
