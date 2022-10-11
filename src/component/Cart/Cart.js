@@ -7,11 +7,12 @@ const Cart = ({topic}) => {
     return (
         <div>
             
-            <div className="card card-compact w-60 bg-base-100 shadow-xl ">
-                <figure><img src={logo} alt="Shoes" /></figure>
+            <div className="card card-compact bg-slate-300 shadow-xl ">
+                <figure><img className='p-5' src={logo} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>Total Question:{total}</p>
+                    
                     <div className="card-actions justify-end">
                         <Link to={`/cart/${id}`}><button className="btn btn-primary">Start Practice</button>
 </Link>
