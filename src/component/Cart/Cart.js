@@ -5,9 +5,9 @@ const Cart = ({topic}) => {
     
     const {logo, name, total,id} = topic;
     return (
-        <div className=''>
+        <div>
             
-            <div className="card card-compact w-96 bg-base-100 shadow-xl ">
+            <div className="card card-compact w-60 bg-base-100 shadow-xl ">
                 <figure><img src={logo} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
