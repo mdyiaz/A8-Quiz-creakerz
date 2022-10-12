@@ -10,7 +10,7 @@ const Header = () => {
 
 <div className="navbar bg-amber-500 mb-4">
     <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Quiz Platform</a>
+        <a className="btn btn-ghost normal-case text-xl">Quiz <br/> Platform </a> 
     </div>
     <div className="flex-none">
       <ul className="menu menu-horizontal p-0">
