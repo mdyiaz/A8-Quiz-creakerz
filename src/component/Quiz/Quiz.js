@@ -11,6 +11,9 @@ const Quiz = () => {
             {
                 quiz.data.questions.map(qz => <ShowQuiz key={qz.id} qz={qz}></ShowQuiz>)
             }
+
+
+            
             
         </div>
     );

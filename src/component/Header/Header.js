@@ -8,7 +8,7 @@ const Header = () => {
        <div>
              <div>
 
-<div className="navbar bg-base-100">
+<div className="navbar bg-amber-500 mb-4">
     <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">Quiz Platform</a>
     </div>
