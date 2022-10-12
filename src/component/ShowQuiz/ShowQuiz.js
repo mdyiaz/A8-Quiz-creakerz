@@ -1,7 +1,8 @@
 import React from 'react';
 // import { BeakerIcon } from '@heroicons/react/24/solid';
-// import { ToastContainer, toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 
+const notify = () => toast('Here is your toast.');
 
 
 const ShowQuiz = ({qz}) => {
@@ -15,14 +16,13 @@ const ShowQuiz = ({qz}) => {
 
     const handlerOption = (id) =>{
         if (correctAnswer === id) {
-            alert('answer is write')
+            toast('answer is write')
         }
         else{
-            alert('Wrong')
+            toast('Wrong')
         }
     }
 
-    // const notify = () => toast('Here is your toast.');
 
 
     return (
@@ -32,20 +32,19 @@ const ShowQuiz = ({qz}) => {
                 <p className='text-xl font-bold	'>{question}</p>
                 <div>
                 
-                {/* <BeakerIcon className="h-6 w-6 text-blue-500"/> */}
 
 
 
                 </div>
            </div>
+
+      <Toaster />
             {
                 options.map(option => <p onClick={() => handlerOption(option)} className='p-1 m-5'>{option}</p>)
-                // <p className='p-1 m-5'>{option}</p>
             }
 
            
 
-{/* <ToastContainer></ToastContainer> */}
 
 
         </div>
