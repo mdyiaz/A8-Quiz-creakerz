@@ -2,7 +2,7 @@ import React from 'react';
 // import { BeakerIcon } from '@heroicons/react/24/solid';
 import toast, { Toaster } from 'react-hot-toast';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const notify = () => toast('Here is your toast.');
 
@@ -35,7 +35,7 @@ const ShowQuiz = ({qz}) => {
             
            <div>
                 <p className='text-xl font-bold	'>{ques}</p> 
-                <span onClick={() => {toast(`${correctAnswer}`);}}><FontAwesomeIcon icon={faCoffee} /></span>
+                <span onClick={() => {toast(`${correctAnswer}`);}}><FontAwesomeIcon icon={faEye} /></span>
                 <div>
                 
 
